@@ -112,7 +112,7 @@ public class PointerFollower : MonoBehaviour
 
             for (int i = 0; i < pointCount; i++)
             {
-                float t = Mathf.InverseLerp(0, pointCount, i);
+                float t = Mathf.InverseLerp(0, pointCount-1, i);
                 vectorCurve[i] = limitCurve.GetPoint(t);
                 masks[i] = Instantiate(unmasker, vectorCurve[i], Quaternion.identity, word.unmaskerTransform);
                 masks[i].SetActive(false);

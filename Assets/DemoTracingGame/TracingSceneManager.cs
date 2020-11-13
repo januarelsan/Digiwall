@@ -5,8 +5,11 @@ using UnityEngine;
 public class TracingSceneManager : MonoBehaviour
 {
 
+    [SerializeField]GameWords words = GameWords.Alif;
+
     private void Start()
     {
-        TracingGame.InstantiateGameOnScene(GameWords.Fa , ()=> { Debug.Log("This is CallBack"); });
+        
+        TracingGame.InstantiateGameOnScene(words, ()=> { Debug.Log("This is CallBack"); });
     }
 }

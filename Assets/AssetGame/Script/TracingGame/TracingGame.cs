@@ -29,7 +29,7 @@ public enum GameWords {
     Mim,
     Nun,
     Wau,
-    ha,
+    Ha2,
     Lam_Alif,
     Hamzah,
     Ya
