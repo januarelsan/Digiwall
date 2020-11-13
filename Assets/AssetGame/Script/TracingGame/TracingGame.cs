@@ -54,7 +54,7 @@ public class TracingGame : MonoBehaviour
             _Main = value;
         }
     }
-    public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null) {
+    public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null) {
         if (Main == null)
         {
             TracingGame tempMain = Resources.Load<TracingGame>("TracingGame/TracingGame");
@@ -63,9 +63,11 @@ public class TracingGame : MonoBehaviour
             Main.audioSource = Main.GetComponent<AudioSource>();
             Main.anim = Main.GetComponent<Animator>();
             Main.canvas.worldCamera = Camera.main;
+            
         }
 
         Main.onComplete = callback;
+        Main.onNext = onNext;
 
         /*
         
@@ -86,7 +88,8 @@ public class TracingGame : MonoBehaviour
 
     public delegate void OnComplete();
     public OnComplete onComplete = null;
-        
+    public OnComplete onNext = null;
+
 
     //GameWords currentWord = GameWords.Alif;
     TracingData data = null;
@@ -105,7 +108,8 @@ public class TracingGame : MonoBehaviour
 
         actionHandler = Instantiate(Resources.Load<WordActionHandler>(data.objPath), transform);
         wordName.text = data.word;
-        wordName.color = new Color(data.color[0], data.color[1], data.color[2]);
+        Debug.Log(data.color[0]+" - "+ data.color[1] + " - " + data.color[2]);
+        wordName.color = new Color( Mathf.InverseLerp(0,255, data.color[0]), Mathf.InverseLerp(0, 255, data.color[1]), Mathf.InverseLerp(0, 255, data.color[2]));
         audioClip = new AudioClip[4] {  Resources.Load<AudioClip>(data.music[0]),
                                         Resources.Load<AudioClip>(data.music[1]),
                                         Resources.Load<AudioClip>(data.music[2]),
@@ -143,9 +147,11 @@ public class TracingGame : MonoBehaviour
         audioSource.Play();
     }
 
-    public void Close() {
+    public void Close(bool isNext) {
         actionHandler.Hide();
         anim.SetTrigger("Close");
+        if (isNext && onNext != null)
+            onNext();
     }
 
     public void SelfDestruct()

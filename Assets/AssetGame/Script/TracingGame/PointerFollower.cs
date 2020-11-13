@@ -69,6 +69,12 @@ public class PointerFollower : MonoBehaviour
         HidePointer();
     }
 
+    private void OnDestroy()
+    {
+        PointerTracingHandler.onDown -= OnDown;
+        PointerTracingHandler.onDrag -= OnDrag;
+    }
+
     public void HidePointer() {
         pointer.gameObject.SetActive(false);
         pointCount = 0;
