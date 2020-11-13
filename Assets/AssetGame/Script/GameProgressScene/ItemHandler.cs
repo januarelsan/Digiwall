@@ -14,7 +14,7 @@ public class ItemHandler : MonoBehaviour
         {
             return !lockIcon.activeInHierarchy;
         }
-        private set
+        set
         {
             lockIcon.SetActive(!value);
             //_isCleared = value;
@@ -27,6 +27,13 @@ public class ItemHandler : MonoBehaviour
         }
         private set {
             clearIcon.SetActive(value);
+            if (!value) {
+                isUnlocked = false;
+            }
+            else
+            {
+                isUnlocked = true;
+            }
             //_isCleared = value;
         }
     }
@@ -55,7 +62,7 @@ public class ItemHandler : MonoBehaviour
     }
 
     public void PlayGame() {
-        if (isUnlocked)
+        if ( (isUnlocked && GameProgressSceneManager.Main.isPreviousItemCleared(word)) || isCleared)
         {
             TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
         }
