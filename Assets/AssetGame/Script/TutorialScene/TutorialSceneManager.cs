@@ -32,4 +32,8 @@ public class TutorialSceneManager : MonoBehaviour
 
         image.sprite = imageAsset[currentImage];
     }
+
+    public void BackToHome() {
+        GtionProduction.GtionLoading.ChangeScene("HomeScene");
+    }
 }

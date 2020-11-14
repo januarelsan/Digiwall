@@ -58,6 +58,8 @@ public class GameProgressSceneManager : MonoBehaviour
 
     }
 
+
+
     public void SaveProgress() {
         float percentProgress = 0;
         DataSaveHelper saveData = new DataSaveHelper();
@@ -91,6 +93,11 @@ public class GameProgressSceneManager : MonoBehaviour
 
         int idx = (int)words;
         return items[idx-1].isCleared;
+    }
+
+    public void BackToHome()
+    {
+        GtionProduction.GtionLoading.ChangeScene("HomeScene");
     }
 
 

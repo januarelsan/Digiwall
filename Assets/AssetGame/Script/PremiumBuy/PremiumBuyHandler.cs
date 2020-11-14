@@ -46,7 +46,10 @@ public class PremiumBuyHandler : MonoBehaviour
 
     private void Start()
     {
-        OpenTryReedem();
+        if ((PlayerPrefs.GetInt(GlobalKey.IS_PREMIUM, 0) != 1))
+            OpenTryReedem();
+        else
+            OpenSuccessReedem();
     }
 
     public void CheckVoucher(string value) {
