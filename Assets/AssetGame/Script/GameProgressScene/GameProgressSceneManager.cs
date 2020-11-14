@@ -63,10 +63,11 @@ public class GameProgressSceneManager : MonoBehaviour
         DataSaveHelper saveData = new DataSaveHelper();
 
         bool autoUnlock = false;
+        bool premiumUser = PlayerPrefs.GetInt(GlobalKey.IS_PREMIUM, 0) == 1;
         for (int i = 0; i < saveData.clear.Length; i++) {
             saveData.clear[i] = items[i].isCleared;
 
-            if (autoUnlock) {
+            if (autoUnlock || premiumUser) {
                 items[i].isUnlocked = true;
                 autoUnlock = false;
             }

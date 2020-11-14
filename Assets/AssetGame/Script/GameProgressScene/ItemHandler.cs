@@ -56,15 +56,18 @@ public class ItemHandler : MonoBehaviour
             //clearIcon.gameObject.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt(GlobalKey.IS_PREMIUM) ==1 || isUnLocked)
+        if (PlayerPrefs.GetInt(GlobalKey.IS_PREMIUM, 0) ==1 || isUnLocked)
             Unlock();
 
     }
 
     public void PlayGame() {
-        if ( (isUnlocked && GameProgressSceneManager.Main.isPreviousItemCleared(word)) || isCleared)
+        if ((isUnlocked && GameProgressSceneManager.Main.isPreviousItemCleared(word)) || isCleared)
         {
             TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
+        }
+        else {
+            PremiumBuyHandler.InstantiatePremiumBuyOnScene(()=> { GameProgressSceneManager.Main.SaveProgress(); });
         }
     }
 

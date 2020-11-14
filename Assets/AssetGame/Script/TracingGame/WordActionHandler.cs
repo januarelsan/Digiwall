@@ -62,7 +62,7 @@ public class WordActionHandler : MonoBehaviour
 
     public void Hide() {
         GetComponent<Animation>().Play("WordHide");
-        Destroy(gameObject, 0.55f);
+        Destroy(gameObject, 0.4f);
     }
 
     public enum ActionType {

@@ -150,6 +150,7 @@ public class TracingGame : MonoBehaviour
     public void Close(bool isNext) {
         actionHandler.Hide();
         anim.SetTrigger("Close");
+        pointer.HidePointer();
         if (isNext && onNext != null)
             onNext();
     }
