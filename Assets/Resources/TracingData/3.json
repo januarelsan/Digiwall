@@ -1,0 +1,11 @@
+{
+	"word" 	: "Ta" , 
+	"color" : [119,192,67],
+	"music" : [
+			"WordsSound/Dommah/20",
+			"WordsSound/Fathah/20",
+			"WordsSound/Kasrah/20",
+			"WordsSound/Basic/20"
+		],
+	"objPath" : "Words/3"
+}
