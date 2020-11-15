@@ -147,7 +147,12 @@ public class TracingGame : MonoBehaviour
         audioSource.Play();
     }
 
+    bool isClosed = false;
     public void Close(bool isNext) {
+        if (isClosed)
+            return;
+
+        isClosed = true;
         actionHandler.Hide();
         anim.SetTrigger("Close");
         pointer.HidePointer();
