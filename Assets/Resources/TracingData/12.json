@@ -2,10 +2,10 @@
 	"word" 	: "Sin" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/12",
+			"WordsSound/Fathah/12",
+			"WordsSound/Kasrah/12",
+			"WordsSound/Basic/12"
 		],
 	"objPath" : "Words/12"
 }

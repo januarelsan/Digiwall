@@ -2,10 +2,10 @@
 	"word" 	: "Ain" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/18",
+			"WordsSound/Fathah/18",
+			"WordsSound/Kasrah/18",
+			"WordsSound/Basic/18"
 		],
 	"objPath" : "Words/18"
 }

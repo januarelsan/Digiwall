@@ -2,10 +2,10 @@
 	"word" 	: "Qaf" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/21",
+			"WordsSound/Fathah/21",
+			"WordsSound/Kasrah/21",
+			"WordsSound/Basic/21"
 		],
 	"objPath" : "Words/21"
 }

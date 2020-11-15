@@ -2,10 +2,10 @@
 	"word" 	: "Syin" , 
 	"color" : [226,144,37],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/13",
+			"WordsSound/Fathah/13",
+			"WordsSound/Kasrah/13",
+			"WordsSound/Basic/13"
 		],
 	"objPath" : "Words/13"
 }

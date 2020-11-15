@@ -2,10 +2,10 @@
 	"word" 	: "Wau" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/26",
+			"WordsSound/Fathah/26",
+			"WordsSound/Kasrah/26",
+			"WordsSound/Basic/26"
 		],
 	"objPath" : "Words/26"
 }

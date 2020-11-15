@@ -2,10 +2,10 @@
 	"word" 	: "Kaf" , 
 	"color" : [119,192,67],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/22",
+			"WordsSound/Fathah/22",
+			"WordsSound/Kasrah/22",
+			"WordsSound/Basic/22"
 		],
 	"objPath" : "Words/22"
 }

@@ -2,10 +2,10 @@
 	"word" 	: "Ghain" , 
 	"color" : [119,192,67],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/19",
+			"WordsSound/Fathah/19",
+			"WordsSound/Kasrah/19",
+			"WordsSound/Basic/19"
 		],
 	"objPath" : "Words/19"
 }

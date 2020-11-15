@@ -2,10 +2,10 @@
 	"word" 	: "Alif" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/1",
+			"WordsSound/Fathah/1",
+			"WordsSound/Kasrah/1",
+			"WordsSound/Basic/1"
 		],
 	"objPath" : "Words/1"
 }

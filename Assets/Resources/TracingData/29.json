@@ -2,10 +2,10 @@
 	"word" 	: "Hamzah" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/29",
+			"WordsSound/Fathah/29",
+			"WordsSound/Kasrah/29",
+			"WordsSound/Basic/29"
 		],
 	"objPath" : "Words/29"
 }

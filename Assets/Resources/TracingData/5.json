@@ -2,10 +2,10 @@
 	"word" 	: "Jim" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/5",
+			"WordsSound/Fathah/5",
+			"WordsSound/Kasrah/5",
+			"WordsSound/Basic/5"
 		],
 	"objPath" : "Words/5"
 }
