@@ -169,8 +169,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8201792917530665393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9480145, y: 3.028398, z: 1}
+  m_LocalPosition: {x: -0.008, y: 0, z: 0}
+  m_LocalScale: {x: 1.3980875, y: 1.4483377, z: 1}
   m_Children: []
   m_Father: {fileID: 8201792917446685282}
   m_RootOrder: 1
@@ -214,7 +214,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 105
-  m_Sprite: {fileID: 21300000, guid: d5d2696baa17b30499e3dcc404b46834, type: 3}
+  m_Sprite: {fileID: 3286163911610860551, guid: 8e1b2365fb10e384796aebbf5455c04c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -459,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 8201792918451346463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1.55, y: 1.55, z: 1}
   m_Children: []
   m_Father: {fileID: 8201792917446685282}
   m_RootOrder: 0
@@ -503,7 +504,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 101
-  m_Sprite: {fileID: 21300000, guid: 5802e0919a3dc574b8b45d3f4e80d138, type: 3}
+  m_Sprite: {fileID: 3286163911610860551, guid: 7b579d88428e0204e9fca7365085ad63,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -570,7 +572,7 @@ Transform:
   m_GameObject: {fileID: 8201792918949813098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1.55, y: 1.55, z: 1}
   m_Children: []
   m_Father: {fileID: 8201792917446685282}
   m_RootOrder: 2
@@ -614,7 +616,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 102
-  m_Sprite: {fileID: 21300000, guid: 758cae8990ba30f4dba7228390cec7a5, type: 3}
+  m_Sprite: {fileID: 3286163911610860551, guid: 3a33186b763f0ac4cad20c2941304152,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
