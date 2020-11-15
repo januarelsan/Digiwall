@@ -62,7 +62,7 @@ public class ItemHandler : MonoBehaviour
     }
 
     public void PlayGame() {
-        if ((isUnlocked && GameProgressSceneManager.Main.isPreviousItemCleared(word)) || isCleared)
+        if ((isUnlocked || GameProgressSceneManager.Main.isPreviousItemCleared(word)) || isCleared)
         {
             TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
         }
