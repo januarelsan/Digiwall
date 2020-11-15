@@ -2,10 +2,10 @@
 	"word" 	: "Ha" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/6",
+			"WordsSound/Fathah/6",
+			"WordsSound/Kasrah/6",
+			"WordsSound/Basic/6"
 		],
 	"objPath" : "Words/6"
 }
