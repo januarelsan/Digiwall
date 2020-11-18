@@ -43,7 +43,8 @@ public class GameProgressSceneManager : MonoBehaviour
         bool autoUnlock = true;
         for (int i = 0; i < items.Length; i++) {
             items[i] = Instantiate(item , itemContainer);
-            items[i].Init(i, saveData.clear[i] , autoUnlock);
+            items[i].Init(i, saveData.clear[i] , autoUnlock && i<3);
+
             autoUnlock = false;
             if (saveData.clear[i])
             {
@@ -69,7 +70,7 @@ public class GameProgressSceneManager : MonoBehaviour
         for (int i = 0; i < saveData.clear.Length; i++) {
             saveData.clear[i] = items[i].isCleared;
 
-            if (autoUnlock || premiumUser) {
+            if ( (autoUnlock && i<3)|| premiumUser) {
                 items[i].isUnlocked = true;
                 autoUnlock = false;
             }

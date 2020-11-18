@@ -2,10 +2,10 @@
 	"word" 	: "Tsa" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/4",
+			"WordsSound/Fathah/4",
+			"WordsSound/Kasrah/4",
+			"WordsSound/Basic/4"
 		],
 	"objPath" : "Words/4"
 }

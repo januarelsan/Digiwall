@@ -2,10 +2,10 @@
 	"word" 	: "Mim" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/24",
+			"WordsSound/Fathah/24",
+			"WordsSound/Kasrah/24",
+			"WordsSound/Basic/24"
 		],
 	"objPath" : "Words/24"
 }

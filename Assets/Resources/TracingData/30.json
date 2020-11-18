@@ -2,10 +2,10 @@
 	"word" 	: "Ya" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/30",
+			"WordsSound/Fathah/30",
+			"WordsSound/Kasrah/30",
+			"WordsSound/Basic/30"
 		],
 	"objPath" : "Words/30"
 }

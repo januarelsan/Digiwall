@@ -2,10 +2,10 @@
 	"word" 	: "Shad" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/14",
+			"WordsSound/Fathah/14",
+			"WordsSound/Kasrah/14",
+			"WordsSound/Basic/14"
 		],
 	"objPath" : "Words/14"
 }

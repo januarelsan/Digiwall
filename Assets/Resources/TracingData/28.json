@@ -2,10 +2,10 @@
 	"word" 	: "Lam Alif" , 
 	"color" : [226,144,37],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/28",
+			"WordsSound/Fathah/28",
+			"WordsSound/Kasrah/28",
+			"WordsSound/Basic/28"
 		],
 	"objPath" : "Words/28"
 }

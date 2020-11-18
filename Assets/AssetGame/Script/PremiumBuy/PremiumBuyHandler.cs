@@ -33,13 +33,22 @@ public class PremiumBuyHandler : MonoBehaviour
     public delegate void OnSuccess();
     OnSuccess onComplete = null;
 
-    [SerializeField] GameObject failed = null;
+    
     [SerializeField] Animation anim = null;
 
     [Header("Container")]
     [SerializeField] GameObject container = null;
     [SerializeField] GameObject aktivasi = null;
     [SerializeField] GameObject sukses = null;
+
+    [Header("Activation")]
+    [SerializeField] UnityEngine.UI.Text heading = null;
+    [SerializeField] UnityEngine.UI.Text description = null;
+    [SerializeField]
+    UnityEngine.UI.InputField input = null;
+    [SerializeField] GameObject failed = null;
+    [SerializeField] Color colorTry = new Color();//FD6048
+    [SerializeField] Color colorFailed = new Color();
 
     [Header("BuyPage")]
     [SerializeField] GameObject buyPage = null;
@@ -53,9 +62,14 @@ public class PremiumBuyHandler : MonoBehaviour
     }
 
     public void CheckVoucher(string value) {
-        if (value != "QWERTY")
+        if (value != "generasialfa2020")
         {
-            failed.SetActive(true);
+            if (value == "") { 
+                setTryReedem();
+                return;
+            }
+            //failed.SetActive(true);
+            setFailedReedem();
             GtionProduction.Vibration.Vibrate(200);
         }
         else {
@@ -94,10 +108,27 @@ public class PremiumBuyHandler : MonoBehaviour
         buyPage.SetActive(false);
         aktivasi.SetActive(true);
         sukses.SetActive(false);
+
+        setTryReedem();
+    }
+
+    public void setTryReedem() {
+        input.text = "";
+        failed.SetActive(false);
+        heading.color = colorTry;
+        heading.text = "Aktivasi dengan Kode Voucher";
+        description.text = "Masukan kode voucher yang terlampir dalam kemasan Produk Digiwall";
+    }
+    public void setFailedReedem()
+    {
+        failed.SetActive(true);
+        heading.color = colorFailed;
+        heading.text = "Aktivasi Produk Gagal";
+        description.text = "Kode yang anda masukan salah\natau tidak dikenal";
     }
 
     public void GotoLink()
     {
-        Application.OpenURL("http://unity3d.com/");
+        Application.OpenURL("https://alfaarena.orderonline.id/App-orderdigiwall");
     }
 }

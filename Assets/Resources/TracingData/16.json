@@ -2,10 +2,10 @@
 	"word" 	: "Tho" , 
 	"color" : [119,192,67],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/16",
+			"WordsSound/Fathah/16",
+			"WordsSound/Kasrah/16",
+			"WordsSound/Basic/16"
 		],
 	"objPath" : "Words/16"
 }
