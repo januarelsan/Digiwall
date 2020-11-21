@@ -2,10 +2,10 @@
 	"word" 	: "Lam" , 
 	"color" : [226,144,37],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/23",
+			"WordsSound/Fathah/23",
+			"WordsSound/Kasrah/23",
+			"WordsSound/Basic/23"
 		],
 	"objPath" : "Words/23"
 }

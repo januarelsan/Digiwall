@@ -2,10 +2,10 @@
 	"word" 	: "Za" , 
 	"color" : [229,107,117],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/11",
+			"WordsSound/Fathah/11",
+			"WordsSound/Kasrah/11",
+			"WordsSound/Basic/11"
 		],
 	"objPath" : "Words/11"
 }

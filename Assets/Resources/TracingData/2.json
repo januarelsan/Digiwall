@@ -2,10 +2,10 @@
 	"word" 	: "Ba" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/2",
+			"WordsSound/Fathah/2",
+			"WordsSound/Kasrah/2",
+			"WordsSound/Basic/2"
 		],
 	"objPath" : "Words/2"
 }

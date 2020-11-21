@@ -35,6 +35,7 @@ public enum GameWords {
     Ya
 }
 
+[System.Serializable]
 public class TracingData {
     public string word = "Fa";
     public byte[] color = null;
@@ -63,7 +64,8 @@ public class TracingGame : MonoBehaviour
             Main.audioSource = Main.GetComponent<AudioSource>();
             Main.anim = Main.GetComponent<Animator>();
             Main.canvas.worldCamera = Camera.main;
-            
+            Main.canvas2.worldCamera = Camera.main;
+
         }
 
         Main.onComplete = callback;
@@ -80,8 +82,9 @@ public class TracingGame : MonoBehaviour
         */
 
         int id = (int)word + 1;
+        Debug.Log(id);
         Main.data = JsonUtility.FromJson<TracingData>(Resources.Load<TextAsset>("TracingData/" + id).text);
-
+        Debug.Log(Main.data.word);
 
         //Main.StartGame();
     }
@@ -94,6 +97,7 @@ public class TracingGame : MonoBehaviour
     //GameWords currentWord = GameWords.Alif;
     TracingData data = null;
     [SerializeField] Canvas canvas = null;
+    [SerializeField] Canvas canvas2 = null;
     [SerializeField] UnityEngine.UI.Text wordName = null;
     WordActionHandler actionHandler = null;
     [SerializeField] PointerFollower pointer = null;
@@ -147,7 +151,12 @@ public class TracingGame : MonoBehaviour
         audioSource.Play();
     }
 
+    bool isClosed = false;
     public void Close(bool isNext) {
+        if (isClosed)
+            return;
+
+        isClosed = true;
         actionHandler.Hide();
         anim.SetTrigger("Close");
         pointer.HidePointer();

@@ -2,10 +2,10 @@
 	"word" 	: "Dal" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/8",
+			"WordsSound/Fathah/8",
+			"WordsSound/Kasrah/8",
+			"WordsSound/Basic/8"
 		],
 	"objPath" : "Words/8"
 }

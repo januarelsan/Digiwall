@@ -2,10 +2,10 @@
 	"word" 	: "Nun" , 
 	"color" : [72,128,194],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/25",
+			"WordsSound/Fathah/25",
+			"WordsSound/Kasrah/25",
+			"WordsSound/Basic/25"
 		],
 	"objPath" : "Words/25"
 }

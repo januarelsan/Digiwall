@@ -2,10 +2,10 @@
 	"word" 	: "Ro" , 
 	"color" : [226,144,37],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/10",
+			"WordsSound/Fathah/10",
+			"WordsSound/Kasrah/10",
+			"WordsSound/Basic/10"
 		],
 	"objPath" : "Words/10"
 }

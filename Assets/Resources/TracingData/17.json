@@ -2,10 +2,10 @@
 	"word" 	: "Zho" , 
 	"color" : [226,144,37],
 	"music" : [
-			"WordsSound/Dommah/20",
-			"WordsSound/Fathah/20",
-			"WordsSound/Kasrah/20",
-			"WordsSound/Basic/20"
+			"WordsSound/Dommah/17",
+			"WordsSound/Fathah/17",
+			"WordsSound/Kasrah/17",
+			"WordsSound/Basic/17"
 		],
 	"objPath" : "Words/17"
 }
