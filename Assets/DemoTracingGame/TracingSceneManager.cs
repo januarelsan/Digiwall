@@ -22,7 +22,7 @@ public class TracingSceneManager : MonoBehaviour
 
     public void CallScene() {
         int id = (int)words + 1;
-        if (id >= 30)
+        if (id >= 28)
             return;
 
         words = (GameWords)(id);

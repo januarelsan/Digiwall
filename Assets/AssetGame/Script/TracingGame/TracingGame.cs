@@ -30,7 +30,6 @@ public enum GameWords {
     Nun,
     Wau,
     Ha2,
-    Lam_Alif,
     Hamzah,
     Ya
 }
@@ -54,6 +53,12 @@ public class TracingGame : MonoBehaviour
         private set {
             _Main = value;
         }
+    }
+
+    public GameWords words;
+
+    void Start(){
+        
     }
     public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null) {
         if (Main == null)
@@ -156,6 +161,7 @@ public class TracingGame : MonoBehaviour
         if (isClosed)
             return;
 
+        GameProgressSceneManager.Main.BackToTracingGameProgressScene();
         isClosed = true;
         actionHandler.Hide();
         anim.SetTrigger("Close");

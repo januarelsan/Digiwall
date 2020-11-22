@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/AssetGame/Scene/TracingGameProgressScene.unity
     guid: ca06b3cea770b6341b723ac35796ca9d
   - enabled: 1
+    path: Assets/AssetGame/Scene/ARTracingGame.unity
+    guid: 4cdc3eb0c3065ae44adbcfad5f0e0d47
+  - enabled: 1
+    path: Assets/AssetGame/Scene/TracingGame.unity
+    guid: c6d87264cd5ab4f4191a780eb832be36
+  - enabled: 1
     path: Assets/AssetGame/Scene/TutorialScene.unity
     guid: 40711f6303ea2ce4581dcd6d2d411c02
   m_configObjects: {}

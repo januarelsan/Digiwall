@@ -9,6 +9,8 @@ public class ItemHandler : MonoBehaviour
     [SerializeField] GameObject lockIcon = null;
     [SerializeField] GameObject clearIcon = null;
 
+    private int wordId;
+
     public bool isUnlocked {
         get
         {
@@ -17,6 +19,7 @@ public class ItemHandler : MonoBehaviour
         set
         {
             lockIcon.SetActive(!value);
+            // textTitle.enabled = !value;
             //_isCleared = value;
         }
     }
@@ -42,6 +45,8 @@ public class ItemHandler : MonoBehaviour
     {
 
         //int id = (int)word + 1;
+        this.wordId = wordId;
+        
         string path = "TracingData/" + (wordId + 1);
         Debug.Log(path);
         TextAsset ta = Resources.Load<TextAsset>(path);
@@ -64,11 +69,17 @@ public class ItemHandler : MonoBehaviour
     public void PlayGame() {
         if (isUnlocked || isCleared)
         {
-            TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
+            // TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
+            ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex = this.wordId;
+            GtionProduction.GtionLoading.ChangeScene("ARTracingGame");
         }
         else {
             PremiumBuyHandler.InstantiatePremiumBuyOnScene(()=> { GameProgressSceneManager.Main.SaveProgress(); });
         }
+    }
+
+    public void Spawn(){
+        TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
     }
 
     // Update is called once per frame

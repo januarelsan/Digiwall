@@ -38,15 +38,16 @@ public class GameProgressSceneManager : MonoBehaviour
 
         DataSaveHelper saveData = JsonUtility.FromJson<DataSaveHelper>(saveDataString);
         float percentProgress = 0;
-        items = new ItemHandler[saveData.clear.Length];
+        items = new ItemHandler[saveData.clears.Length];
 
         bool autoUnlock = true;
         for (int i = 0; i < items.Length; i++) {
+            Debug.Log("Item Length: " + items.Length);
             items[i] = Instantiate(item , itemContainer);
-            items[i].Init(i, saveData.clear[i] , autoUnlock && i<3);
+            items[i].Init(i, saveData.clears[i] , autoUnlock && i<3);
 
             autoUnlock = false;
-            if (saveData.clear[i])
+            if (saveData.clears[i])
             {
                 percentProgress++;
                 autoUnlock = true;
@@ -67,8 +68,8 @@ public class GameProgressSceneManager : MonoBehaviour
 
         bool autoUnlock = false;
         bool premiumUser = PlayerPrefs.GetInt(GlobalKey.IS_PREMIUM, 0) == 1;
-        for (int i = 0; i < saveData.clear.Length; i++) {
-            saveData.clear[i] = items[i].isCleared;
+        for (int i = 0; i < saveData.clears.Length; i++) {
+            saveData.clears[i] = items[i].isCleared;
 
             if ( (autoUnlock && i<3)|| premiumUser) {
                 items[i].isUnlocked = true;
@@ -96,15 +97,16 @@ public class GameProgressSceneManager : MonoBehaviour
         return items[idx-1].isCleared;
     }
 
-    public void BackToHome()
+    public void BackToTracingGameProgressScene()
     {
-        GtionProduction.GtionLoading.ChangeScene("HomeScene");
+        GtionProduction.GtionLoading.ChangeScene("TracingGameProgressScene");
     }
 
 
 }
 
 public class DataSaveHelper{
-    public bool[] clear = new bool[30];
-    //public bool[] unlock = new bool[30];
+    public bool[] clears = new bool[29];
+    
+    
 }

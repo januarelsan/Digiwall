@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="hijaiyah_zho_29" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_za_28" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ya_27" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_wau_26" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_tsa_25" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_tho_24" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ta_23" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_syin_22" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_sin_21" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_shad_20" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ro_19" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_qaf_18" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_nun_17" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_mim_16" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_lam_15" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_kho_13" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_kaf_12" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_jim_11" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_hamza_10" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_Haa_9" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ha_8" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ghoin_7" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_fa_6" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_dzal_5" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_dhad_4" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_dal_3" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ba_2" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_alif_1" size="0.100000 0.100000" />
+    <ImageTarget name="hijaiyah_ain_0" size="0.100000 0.100000" />
+  </Tracking>
+</QCARConfig>
