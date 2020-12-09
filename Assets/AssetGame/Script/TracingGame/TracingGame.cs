@@ -30,6 +30,7 @@ public enum GameWords {
     Nun,
     Wau,
     Ha2,
+    Lam_Alif,
     Hamzah,
     Ya
 }
@@ -54,16 +55,19 @@ public class TracingGame : MonoBehaviour
             _Main = value;
         }
     }
-
-    public GameWords words;
-
-    void Start(){
-        
-    }
     public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null) {
         if (Main == null)
         {
-            TracingGame tempMain = Resources.Load<TracingGame>("TracingGame/TracingGame");
+            TracingGame tempMain = null;
+            if (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown)
+            {
+                tempMain = Resources.Load<TracingGame>("TracingGame/TracingGamePotrait");
+            }
+            else
+            {
+                tempMain = Resources.Load<TracingGame>("TracingGame/TracingGameLandscape");
+            }
+            
             
             Main = Instantiate(tempMain);
             Main.audioSource = Main.GetComponent<AudioSource>();
@@ -101,6 +105,7 @@ public class TracingGame : MonoBehaviour
 
     //GameWords currentWord = GameWords.Alif;
     TracingData data = null;
+    [SerializeField] float scale = 1f;
     [SerializeField] Canvas canvas = null;
     [SerializeField] Canvas canvas2 = null;
     [SerializeField] UnityEngine.UI.Text wordName = null;
@@ -116,6 +121,7 @@ public class TracingGame : MonoBehaviour
             Destroy(actionHandler.gameObject);
 
         actionHandler = Instantiate(Resources.Load<WordActionHandler>(data.objPath), transform);
+        actionHandler.transform.localScale = Vector3.one * scale;
         wordName.text = data.word;
         Debug.Log(data.color[0]+" - "+ data.color[1] + " - " + data.color[2]);
         wordName.color = new Color( Mathf.InverseLerp(0,255, data.color[0]), Mathf.InverseLerp(0, 255, data.color[1]), Mathf.InverseLerp(0, 255, data.color[2]));
@@ -161,7 +167,6 @@ public class TracingGame : MonoBehaviour
         if (isClosed)
             return;
 
-        GameProgressSceneManager.Main.BackToTracingGameProgressScene();
         isClosed = true;
         actionHandler.Hide();
         anim.SetTrigger("Close");
