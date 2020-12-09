@@ -7,11 +7,11 @@ using System.IO;
 public class SpriteLoader : MonoBehaviour
 {
     [SerializeField] private string fileName;
-    private Image resultImage;
+    private SpriteRenderer resultSpriteR;
     private string path;
 
     void Awake(){
-        resultImage = GetComponent<Image>();
+        resultSpriteR = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class SpriteLoader : MonoBehaviour
 
         path = Application.persistentDataPath + "/" + fileName + ".png";
 
-        if(path != null){
+        if(File.Exists(path)){
 
             byte[] pngImageByteArray = null;
                         
@@ -29,7 +29,7 @@ public class SpriteLoader : MonoBehaviour
             Texture2D tempTexture = new Texture2D(2, 2);
             tempTexture.LoadImage(pngImageByteArray);
 
-            resultImage.sprite = Sprite.Create(tempTexture,new Rect(0,0, tempTexture.width, tempTexture.height) ,new Vector2(0,0), .01f);
+            resultSpriteR.sprite = Sprite.Create(tempTexture,new Rect(0,0, tempTexture.width, tempTexture.height) ,new Vector2(0.5f,0.5f), 300f);
         }
 
     }

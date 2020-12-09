@@ -25,7 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - RegionCapture
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Pesawat
+    uniqueID: 4006951501
+    locked: 0
+  - name: Rocket
+    uniqueID: 4245827839
+    locked: 0
+  - name: Kereta
+    uniqueID: 81040541
+    locked: 0
+  - name: Mobil
+    uniqueID: 2989950191
+    locked: 0
+  - name: Gajah
+    uniqueID: 4185804821
     locked: 0

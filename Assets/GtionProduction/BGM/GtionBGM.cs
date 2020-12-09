@@ -38,27 +38,27 @@ namespace GtionProduction
         AudioSource audioSource = null;
         AudioClip nextClip = null;
 
-        float maxVolume = 1;
+        float maxVolume = 0.3f;
         bool isStopped = false;
 
         float target = 0;
         float velo = 0;
 
-        public static void Play(AudioClip clip, float maxVolume = 1, bool replayed = false, bool loop = true)
+        public static void Play(AudioClip clip, float maxVolume = 0.3f, bool replayed = false, bool loop = true)
         {
             if (replayed || bgm.audioSource.clip != clip)
             {
 
                 // jika yang akan di play sama
                 bgm.maxVolume = maxVolume;
-                bgm.nextClip = clip;
+                bgm.nextClip = clip;                
                 bgm.target = 0;
                 bgm.audioSource.loop = loop;
 
             }
             bgm.isStopped = false;
         }
-        public static void Play(string clipName, float maxVolume = 1, bool replayed = false)
+        public static void Play(string clipName, float maxVolume = 0.3f, bool replayed = false)
         {
             AudioClip clip = Resources.Load<AudioClip>("Audio/" + clipName);
             Play(clip, maxVolume, replayed);

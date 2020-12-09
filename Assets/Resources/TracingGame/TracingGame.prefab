@@ -805,6 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df2c25195d84014cba4e1a88ef14cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  words: 0
   canvas: {fileID: 4332201152091796800}
   canvas2: {fileID: 6537840381890169732}
   wordName: {fileID: 1241166954887939729}

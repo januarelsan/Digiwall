@@ -9,11 +9,18 @@ public class ARAnimateCapture : MonoBehaviour
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private GameObject mainUIObj;
     [SerializeField] private Image resultImage;
+    
 
     private string path;
 
     void Awake(){
-        path = Application.persistentDataPath + "/Digiwal.png";
+        string targetName = PlayerPrefs.GetString("TargetName", "bebek");
+        path = Application.persistentDataPath + "/" + targetName + ".png";
+        
+    }
+
+    void Start(){
+        
     }
 
     // Take a shot immediately
@@ -28,6 +35,7 @@ public class ARAnimateCapture : MonoBehaviour
         // Debug.Log("Streaming Assets: " + Application.streamingAssetsPath);
 
         mainUIObj.SetActive(false);
+        
 
         // We should only read the screen buffer after rendering is complete
         yield return new WaitForEndOfFrame();

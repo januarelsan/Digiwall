@@ -8,12 +8,7 @@ public class ARHijaiyahDataManager : Singleton<ARHijaiyahDataManager>
     // [SerializeField] private GameObject[] imageTargets;
 
     void Start(){
-        // for (int i = 0; i < imageTargets.Length; i++)
-        // {
-        //     if(imageTargets[i].GetComponent<ItemTarget>().GetIndex() != ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex){
-        //         imageTargets[i].SetActive(false);
-        //     }
-        // }
+        
     }
     public int SelectedHijaiyahIndex
 	{

@@ -5,21 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/AssetGame/Scene/HomeScene.unity
     guid: 5ecfaa6b35d92244e94caf55aa09d2f9
-  - enabled: 0
+  - enabled: 1
     path: Assets/AssetGame/Scene/TracingGameProgressScene.unity
     guid: ca06b3cea770b6341b723ac35796ca9d
   - enabled: 1
-    path: Assets/AssetGame/Scene/ARAnimateGame.unity
-    guid: 4cdc3eb0c3065ae44adbcfad5f0e0d47
-  - enabled: 0
     path: Assets/AssetGame/Scene/TracingGame.unity
     guid: c6d87264cd5ab4f4191a780eb832be36
-  - enabled: 0
+  - enabled: 1
     path: Assets/AssetGame/Scene/TutorialScene.unity
     guid: 40711f6303ea2ce4581dcd6d2d411c02
+  - enabled: 1
+    path: Assets/AssetGame/Scene/AnimateGameProgressScene.unity
+    guid: c096076c080ba9e43b53324a6119bd87
+  - enabled: 1
+    path: Assets/AssetGame/Scene/Get_Texture.unity
+    guid: 1041b21c66060d34a99e37374cec28a6
+  - enabled: 1
+    path: Assets/AssetGame/Scene/ARTracingGame.unity
+    guid: cbba81a6952819643bc4eb6b7515fa64
   - enabled: 1
     path: Assets/AssetGame/Scene/AnimateScene.unity
     guid: 6f167db9a207b2443b8dd4b396a7d624
