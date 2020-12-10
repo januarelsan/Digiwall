@@ -890,7 +890,7 @@ PrefabInstance:
     - target: {fileID: 1512457003546083290, guid: 440a546d36d75e24a9fb3be430bf38e0,
         type: 3}
       propertyPath: screenOrientation
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1512457003546083291, guid: 440a546d36d75e24a9fb3be430bf38e0,
         type: 3}

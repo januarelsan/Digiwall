@@ -79,7 +79,18 @@ public class ItemHandler : MonoBehaviour
     }
 
     public void Spawn(){
-        TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
+        TracingGame.InstantiateGameOnScene(word, 
+        () => {//on cLeared
+            SetCleared();
+            GameProgressSceneManager.Main.SaveProgress();
+        },
+        () => {//on Next
+            GtionProduction.GtionLoading.ChangeScene("TracingGameProgressScene");
+        },
+        () => {//on Close
+            GtionProduction.GtionLoading.ChangeScene("TracingGameProgressScene");
+        }
+        );
     }
 
     // Update is called once per frame
