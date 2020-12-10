@@ -69,7 +69,7 @@ public class ItemHandler : MonoBehaviour
     public void PlayGame() {
         if (isUnlocked || isCleared)
         {
-            // TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
+            //TracingGame.InstantiateGameOnScene(word, () => { SetCleared(); GameProgressSceneManager.Main.SaveProgress(); });
             ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex = this.wordId;
             GtionProduction.GtionLoading.ChangeScene("ARTracingGame");
         }

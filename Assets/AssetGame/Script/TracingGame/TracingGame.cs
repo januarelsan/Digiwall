@@ -58,16 +58,16 @@ public class TracingGame : MonoBehaviour
     public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null) {
         if (Main == null)
         {
+            //Debug.Log(Screen.orientation +" - "+ (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown));
             TracingGame tempMain = null;
-            if (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown)
+            Debug.Log(Screen.orientation + " - "+ Screen.height +" - "+ Screen.width);
+            if (Screen.height > Screen.width)
             {
                 tempMain = Resources.Load<TracingGame>("TracingGame/TracingGamePotrait");
             }
-            else
-            {
-                tempMain = Resources.Load<TracingGame>("TracingGame/TracingGameLandscape");
+            else {
+                tempMain = Resources.Load<TracingGame>("TracingGame/TracingGameLanscape");
             }
-            
             
             Main = Instantiate(tempMain);
             Main.audioSource = Main.GetComponent<AudioSource>();
