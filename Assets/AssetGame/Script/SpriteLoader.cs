@@ -7,6 +7,7 @@ using System.IO;
 public class SpriteLoader : MonoBehaviour
 {
     [SerializeField] private string fileName;
+    [SerializeField] private SpriteRenderer whiteRenderer;
     private SpriteRenderer resultSpriteR;
     private string path;
 
@@ -30,6 +31,10 @@ public class SpriteLoader : MonoBehaviour
             tempTexture.LoadImage(pngImageByteArray);
 
             resultSpriteR.sprite = Sprite.Create(tempTexture,new Rect(0,0, tempTexture.width, tempTexture.height) ,new Vector2(0.5f,0.5f), 300f);
+            whiteRenderer.enabled = true;
+        } else {
+            resultSpriteR.sprite = null;
+            whiteRenderer.enabled = false;
         }
 
     }
