@@ -131,7 +131,7 @@ public class TracingGame : MonoBehaviour
                                         Resources.Load<AudioClip>(data.music[1]),
                                         Resources.Load<AudioClip>(data.music[2]),
                                         Resources.Load<AudioClip>(data.music[3]), };
-
+        GtionProduction.GtionBGM.Pause();
         pointer.word = actionHandler;
         actionHandler.pointer = pointer;
     }
@@ -173,6 +173,9 @@ public class TracingGame : MonoBehaviour
         actionHandler.Hide();
         anim.SetTrigger("Close");
         pointer.HidePointer();
+
+        GtionProduction.GtionBGM.Resume();
+
         if (isNext && onNext != null)
             onNext();
         if (!isNext && onClose != null)

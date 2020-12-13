@@ -36,14 +36,24 @@ namespace GtionProduction
 
         public static bool isOpening
         {
-            get { return loading.isOpen; }
+            get { return  loading.isOpen; }
         }
 
-        [Header("Loading")]
+        [Header("Loading Landscape")]
         public Text loadingText = null;
         public Image loadingBar = null;
         [Tooltip("The Animation Name Should be 'OpenLoading' and 'HideLoading'")]
         public Animation anim = null;
+
+        
+        [Header("Loading Potrait")]
+        public Text loadingText2 = null;
+        public Image loadingBar2 = null;
+        [Tooltip("The Animation Name Should be 'OpenLoading' and 'HideLoading'")]
+        public Animation anim2 = null;
+
+        DeviceOrientation currentOrientation = DeviceOrientation.Portrait;
+
         public Color[] lodingBarColor = new Color[2];
 
         bool isOpen = false;
@@ -52,6 +62,14 @@ namespace GtionProduction
 
         public static void ChangeScene(string sceneName)
         {
+            if (Screen.height > Screen.width)
+            {
+                loading.currentOrientation = DeviceOrientation.Portrait;
+            }
+            else {
+                loading.currentOrientation = DeviceOrientation.LandscapeLeft;
+            }
+
             OpenLayerLoading(() =>
             {
                 StartMoveScene(sceneName);
@@ -60,9 +78,14 @@ namespace GtionProduction
 
         public static void OpenLayerLoading(UnityEngine.Events.UnityAction responBack = null)
         {
-            loading.anim.gameObject.SetActive(true);
             SetAmountLoading(0);
-            loading.anim.Play("OpenLoading"); //.Play("OpenLoading");
+            if(loading.currentOrientation == DeviceOrientation.LandscapeLeft){
+                loading.anim.gameObject.SetActive(true);
+                loading.anim.Play("OpenLoading"); //.Play("OpenLoading");
+            }else{
+                loading.anim2.gameObject.SetActive(true);
+                loading.anim2.Play("OpenLoading"); //.Play("OpenLoading");
+            }
 
             loading.isOpen = true;
 
@@ -74,9 +97,14 @@ namespace GtionProduction
 
         public static void HideLayerLoading(UnityEngine.Events.UnityAction responBack = null)
         {
-            loading.anim.Play("HideLoading");
-            SetAmountLoading(1);
+
+            if(loading.currentOrientation == DeviceOrientation.LandscapeLeft){
+                loading.anim.Play("HideLoading");
+            }else{
+                loading.anim2.Play("HideLoading");
+            }
             loading.SetInactiveLoadingObject();
+            SetAmountLoading(1);
             loading.isOpen = false;
             if (responBack != null)
             {
@@ -87,7 +115,10 @@ namespace GtionProduction
         public static void SetAmountLoading(float Amount)
         {
             Amount = Mathf.Clamp(Amount, 0.02f, 1f);
-            loading.loadingBar.fillAmount = Amount;
+            if(loading.currentOrientation == DeviceOrientation.Portrait)
+                loading.loadingBar2.fillAmount = Amount;
+            else
+                loading.loadingBar.fillAmount = Amount;
 
         }
 
@@ -116,7 +147,10 @@ namespace GtionProduction
 
         void SetInactive()
         {
-            anim.gameObject.SetActive(false);
+            if(currentOrientation == DeviceOrientation.Portrait)
+                anim2.gameObject.SetActive(false);
+            else
+                anim.gameObject.SetActive(false);
         }
 
 
