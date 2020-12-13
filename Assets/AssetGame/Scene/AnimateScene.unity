@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: pesawat
+  whiteRenderer: {fileID: 0}
 --- !u!1 &40986049
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +306,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -2258,6 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kereta
+  whiteRenderer: {fileID: 135857595}
 --- !u!212 &44906360
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2679,6 +2681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: mobil
+  whiteRenderer: {fileID: 0}
 --- !u!1 &308312666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,6 +2727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: rocket
+  whiteRenderer: {fileID: 1553290944}
 --- !u!212 &308312670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3328,6 +3332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: pesawat
+  whiteRenderer: {fileID: 722257435}
 --- !u!212 &482252480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3540,6 +3545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kereta
+  whiteRenderer: {fileID: 0}
 --- !u!1 &702669764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,7 +3597,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -4703,7 +4709,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -6031,6 +6037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: paus
+  whiteRenderer: {fileID: 0}
 --- !u!1 &844734822
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: rocket
+  whiteRenderer: {fileID: 0}
 --- !u!61 &921863598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7524,6 +7532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: gajah
+  whiteRenderer: {fileID: 1119497515}
 --- !u!212 &1118816887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7965,6 +7974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: rocket
+  whiteRenderer: {fileID: 0}
 --- !u!114 &1152559313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,7 +8427,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -9276,7 +9286,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -11091,6 +11101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: pesawat
+  whiteRenderer: {fileID: 0}
 --- !u!1 &1240504962
 GameObject:
   m_ObjectHideFlags: 0
@@ -11136,6 +11147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kapal
+  whiteRenderer: {fileID: 1840298132}
 --- !u!212 &1240504966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11264,7 +11276,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -12372,6 +12384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: mobil
+  whiteRenderer: {fileID: 1712329793}
 --- !u!212 &1323366773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12467,6 +12480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: bebek
+  whiteRenderer: {fileID: 1027756030}
 --- !u!212 &1365069289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12691,7 +12705,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -14485,6 +14499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kupu
+  whiteRenderer: {fileID: 0}
 --- !u!1 &1712329791
 GameObject:
   m_ObjectHideFlags: 0
@@ -14896,7 +14911,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -16013,7 +16028,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -17494,6 +17509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: cacing
+  whiteRenderer: {fileID: 844734824}
 --- !u!212 &1919679327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17706,6 +17722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: cacing
+  whiteRenderer: {fileID: 0}
 --- !u!1 &1982201298
 GameObject:
   m_ObjectHideFlags: 0
@@ -17922,6 +17939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: paus
+  whiteRenderer: {fileID: 333736191}
 --- !u!212 &2025236390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18104,6 +18122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: gajah
+  whiteRenderer: {fileID: 0}
 --- !u!1 &2054191037
 GameObject:
   m_ObjectHideFlags: 0
@@ -18236,6 +18255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: bebek
+  whiteRenderer: {fileID: 0}
 --- !u!1 &2056898808
 GameObject:
   m_ObjectHideFlags: 0
@@ -18368,6 +18388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kapal
+  whiteRenderer: {fileID: 0}
 --- !u!1 &2068903447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125742, guid: 552b7b5872bf41745810a0b7bdabf440,
@@ -18616,7 +18637,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: State 1
+    startState: State 2
     states:
     - name: State 1
       description: 
@@ -20051,6 +20072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: kupu
+  whiteRenderer: {fileID: 2095039660}
 --- !u!212 &2132741646
 SpriteRenderer:
   m_ObjectHideFlags: 0
