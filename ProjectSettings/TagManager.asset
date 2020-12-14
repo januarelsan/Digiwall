@@ -42,3 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pesawat
+    uniqueID: 1317198841
+    locked: 0
+  - name: Rocket
+    uniqueID: 1170786593
+    locked: 0
+  - name: Kereta
+    uniqueID: 2044641241
+    locked: 0
+  - name: Mobil
+    uniqueID: 2860077121
+    locked: 0
+  - name: Gajah
+    uniqueID: 3833234579
+    locked: 0
