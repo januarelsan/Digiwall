@@ -33,6 +33,7 @@ public class SpriteLoader : MonoBehaviour
             resultSpriteR.sprite = Sprite.Create(tempTexture,new Rect(0,0, tempTexture.width, tempTexture.height) ,new Vector2(0.5f,0.5f), 300f);
             whiteRenderer.enabled = true;
         } else {
+            transform.parent.gameObject.SetActive(false);
             resultSpriteR.sprite = null;
             whiteRenderer.enabled = false;
         }
