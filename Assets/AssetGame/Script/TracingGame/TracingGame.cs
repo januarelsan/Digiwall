@@ -55,7 +55,7 @@ public class TracingGame : MonoBehaviour
             _Main = value;
         }
     }
-    public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null) {
+    public static void InstantiateGameOnScene(GameWords word , OnComplete callback = null , OnComplete onNext = null , OnComplete onClose = null) {
         if (Main == null)
         {
             //Debug.Log(Screen.orientation +" - "+ (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown));
@@ -79,6 +79,7 @@ public class TracingGame : MonoBehaviour
 
         Main.onComplete = callback;
         Main.onNext = onNext;
+        Main.onClose = onClose;
 
         /*
         
@@ -101,6 +102,7 @@ public class TracingGame : MonoBehaviour
     public delegate void OnComplete();
     public OnComplete onComplete = null;
     public OnComplete onNext = null;
+    public OnComplete onClose = null;
 
 
     //GameWords currentWord = GameWords.Alif;
@@ -129,7 +131,7 @@ public class TracingGame : MonoBehaviour
                                         Resources.Load<AudioClip>(data.music[1]),
                                         Resources.Load<AudioClip>(data.music[2]),
                                         Resources.Load<AudioClip>(data.music[3]), };
-
+        GtionProduction.GtionBGM.Pause();
         pointer.word = actionHandler;
         actionHandler.pointer = pointer;
     }
@@ -171,8 +173,13 @@ public class TracingGame : MonoBehaviour
         actionHandler.Hide();
         anim.SetTrigger("Close");
         pointer.HidePointer();
+
+        GtionProduction.GtionBGM.Resume();
+
         if (isNext && onNext != null)
             onNext();
+        if (!isNext && onClose != null)
+            onClose();
     }
 
     public void SelfDestruct()

@@ -10,6 +10,7 @@ public class HijayiyahManager : MonoBehaviour
     {
         // itemHandlerHolder.GetChild(ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex).GetComponent<ItemHandler>().PlayGame();
         StartCoroutine(Spawn());
+        
     }
 
     IEnumerator Spawn()

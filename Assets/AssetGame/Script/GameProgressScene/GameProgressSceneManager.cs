@@ -44,7 +44,7 @@ public class GameProgressSceneManager : MonoBehaviour
         for (int i = 0; i < items.Length; i++) {
             Debug.Log("Item Length: " + items.Length);
             items[i] = Instantiate(item , itemContainer);
-            items[i].Init(i, saveData.clears[i] , autoUnlock && i<3);
+            items[i].Init(i, saveData.clears[i] , autoUnlock && i<1);
 
             autoUnlock = false;
             if (saveData.clears[i])
