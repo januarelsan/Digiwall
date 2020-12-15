@@ -91,8 +91,10 @@ public class MyTrackableHandler : MonoBehaviour, ITrackableEventHandler
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
         // ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex = GetComponent<ItemTarget>().GetIndex();
-        if(ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex == GetComponent<ItemTarget>().GetIndex())
+        if(ARHijaiyahDataManager.Instance.SelectedHijaiyahIndex == GetComponent<ItemTarget>().GetIndex()){
             GtionProduction.GtionLoading.ChangeScene("TracingGame");
+            ARHijaiyahDataManager.Instance.ChangeSignSprite();
+        }
         else{
             Debug.Log("Tracked but wrong qr code");
         }
