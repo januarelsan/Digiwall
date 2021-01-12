@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ARAnimateDataManager : Singleton<ARAnimateDataManager>
 {
 
     // [SerializeField] private GameObject[] imageTargets;
+    [SerializeField] private Button captureButton;
+
 
     void Start(){
         // for (int i = 0; i < imageTargets.Length; i++)
@@ -14,6 +17,10 @@ public class ARAnimateDataManager : Singleton<ARAnimateDataManager>
         //         imageTargets[i].SetActive(false);
         //     }
         // }
+    }
+
+    public void ActivateButton(bool value){
+        captureButton.enabled = value;
     }
     public int SelectedModelIndex
 	{

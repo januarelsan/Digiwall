@@ -94,7 +94,7 @@ public class AnimateTrackableHandler : MonoBehaviour, ITrackableEventHandler
 
         if(ARAnimateDataManager.Instance.SelectedModelIndex == GetComponent<ItemTarget>().GetIndex()){
 
-        
+            ARAnimateDataManager.Instance.ActivateButton(true);
             // GtionProduction.GtionLoading.ChangeScene("TracingGame");
             // GameObject.Find("RenderCamera").SetActive(true);
         
@@ -121,6 +121,8 @@ public class AnimateTrackableHandler : MonoBehaviour, ITrackableEventHandler
 
     protected virtual void OnTrackingLost()
     {
+        ARAnimateDataManager.Instance.ActivateButton(false);
+        
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);

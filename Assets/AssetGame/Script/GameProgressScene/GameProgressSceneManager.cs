@@ -42,7 +42,7 @@ public class GameProgressSceneManager : MonoBehaviour
 
         bool autoUnlock = true;
         for (int i = 0; i < items.Length; i++) {
-            Debug.Log("Item Length: " + items.Length);
+            
             items[i] = Instantiate(item , itemContainer);
             items[i].Init(i, saveData.clears[i] , autoUnlock && i<1);
 

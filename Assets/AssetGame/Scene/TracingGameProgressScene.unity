@@ -757,7 +757,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.15
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1676,6 +1676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2665038772ab361439e7b6d2a81bb5af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  signImage: {fileID: 0}
+  signTrackedSprite: {fileID: 0}
 --- !u!4 &1992708108
 Transform:
   m_ObjectHideFlags: 0
@@ -1759,7 +1761,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20%
+  m_Text: 0%
 --- !u!222 &2082003855
 CanvasRenderer:
   m_ObjectHideFlags: 0
